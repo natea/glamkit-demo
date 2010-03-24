@@ -1,6 +1,6 @@
 
-GLAMkit Smartlinks
-==================
+Smartlinks
+==========
 
 The philosophy behind smartlinks
 --------------------------------
@@ -23,22 +23,21 @@ For example, consider the following sentence that might exist as part of a text 
 
 In January 2010 the Brautigan Library purchased the original manuscript of Marsha Paterson’s Bacon Death for $120,000. The book came with it’s own refrigeration unit.
 
+What do they do?
+----------------
+
 Smartlinks are a way to allow content editors to create a ‘link’ to what is usually a django model instance, by typing some smartlink markup into content in the admin interface (or conceivably anywhere). They are inspired by the internal links syntax on wiki. One can think of them as wiki links on steroids - much more powerful and customisable. The link relies on an editor's understanding of the page to link to, rather than any particular knowledge of the underlying model or the site's URLconf. A typical example:
 
-[title[Mad Max]] is transformed to <a href="/title/mad-max/">Mad Max</a>
-but you could also use, depending on preference or circumstance:
-
-[t[Mad Max]]
-[title[Mad Max]1979]
-[[Mad Max]]
+``[title[Mad Max]]`` is transformed to ``<a href="/title/mad-max/">Mad Max</a>``
+but you could also use, depending on preference or circumstance, ``[t[Mad Max]]``, ``[title[Mad Max]1979]``, or ``[[Mad Max]]``
 
 The text in between the innermost square brackets is the linked text, by default, but most importantly it is used as the search text for the item to link to.
 
-If no item can be found, then a <cite class="unresolved"> is returned by default, e.g. [t[Mad Megan]] becomes <cite class="unresolved">Mad Megan</cite>. When a Mad Megan item is created, the link starts working. This means that editors can put smartlinks in for items that do not exist yet.
+If no item can be found, then a ``<cite class="unresolved">`` is returned by default, e.g. ``[t[Mad Megan]]`` becomes ``<cite class="unresolved">Mad Megan</cite>``. When a Mad Megan item is created, the link starts working. This means that editors can put smartlinks in for items that do not exist yet.
 
-If several items are found, then a <cite class="ambiguous"> is returned by default, e.g. [t[On Our Selection]] becomes <cite class="ambiguous">On Our Selection</cite>.
+If several items are found, then a ``<cite class="ambiguous">`` is returned by default, e.g. ``[t[On Our Selection]]`` becomes ``<cite class="ambiguous">On Our Selection</cite>``.
 
-Ambiguous items can be resolved by adding a disambiguator after the innermost brackets ([t[On Our Selection]1920]]).
+Ambiguous items can be resolved by adding a disambiguator after the innermost brackets (``[t[On Our Selection]1920]]``).
 
 
 Installation
@@ -53,7 +52,7 @@ Getting started is easy:
 
 3. to parse smartlinks within templates, use the 'smartlinks' filter:
     
-(assuming the variable 'data' holds some smartlinkable text, like '[person[Stanley Kubrick]] had a close working relationship with [p[Peter Sellers]1989], one of the finest character actors in modern cinema.'
+(assuming the variable 'data' holds some smartlinkable text, like ``[person[Stanley Kubrick]] had a close working relationship with [p[Peter Sellers]1989], one of the finest character actors in modern cinema.``)
 
     {% load smartlinks %}
 
@@ -98,8 +97,6 @@ The syntax for the rule is ((<tuple containing possible prefixes>), <path to the
 
 Prefix defines which model will 'render' the smartlink. The order of models specified in SMARTLINKS matters - it specifies in which order models will try to render a smartlink (i.e. if first model finds no match, second one tries to render it, etc.). Also, if no prefix is specified in the smartlinks, all models get turns in trying to render it, in the specified order.
 
-
-
 Smartlinks hooks
 ^^^^^^^^^^^^^^^^
 
@@ -130,8 +127,8 @@ Options syntax
 ^^^^^^^^^^^^^^
 Usually, all we want from a smart link is to search a given model using given search type, so defining a custom hook seems like an overkill. In that case, smartlinks extra options are helpful. "search_field" specifies what field should be searched and how it should be searched, disambiguator, obviously, does the same thing for the disambiguator.
 
-Indices and tables
-==================
+Usage
+-----
 
 * :ref:`genindex`
 * :ref:`modindex`
