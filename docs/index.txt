@@ -1,26 +1,28 @@
-.. GLAMkit documentation master file, created by
-   sphinx-quickstart on Tue Mar 23 18:00:38 2010.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. GLAMkit documentation master file
 
+===================================
 Welcome to GLAMkit's documentation!
 ===================================
 
-Contents:
+Introduction
+============
 
-.. toctree::
-   :maxdepth: 2
+    * :doc:`Installing GLAMkit <install>`
 
-   intro
-   concepts
-   install
+Content Apps
+============
 
-   faq
-   glossary
-   changes
-   examples
-   
-   smartlinks
+    * :doc:`Schedule <schedule/index>`
+    * :doc:`Blog tools <blogtools/index>`
+
+Utility Apps
+============
+
+    * :doc:`Mediahash <mediahash/index>`
+    * :doc:`Smartlinks <smartlinks/index>`
+    * :doc:`Stopspam <stopspam/index>`
+    
+    example
 
 Indices and tables
 ==================

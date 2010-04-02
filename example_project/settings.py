@@ -1,5 +1,17 @@
 # Django settings for example_project project.
 
+import sys, os, logging
+
+# Absolute paths for where the project and templates are stored.
+PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
+TEMPLATES_PATH = os.path.join(PROJECT_PATH, 'templates/')
+
+# Add glamkit to the pythonpath
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/mediahash'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/smartlinks'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/blogtools'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/events'))
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -11,8 +23,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'example.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -78,6 +90,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'example_project.urls'
 
 TEMPLATE_DIRS = (
+    '/Volumes/Macintosh HD/Users/thomas/Code/glamkit/glamkit-core/example_project/templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -91,6 +104,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'mediahash',
     'smartlinks',
+#     'events',
+    'blogtools',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'blog',
 )
