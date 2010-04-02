@@ -12,7 +12,7 @@ Introduction
 Content Apps
 ============
 
-    * :doc:`Schedule <schedule/index>`
+    * :doc:`Events <events/index>`
     * :doc:`Blog tools <blogtools/index>`
 
 Utility Apps

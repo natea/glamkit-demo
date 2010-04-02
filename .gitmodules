@@ -10,6 +10,6 @@
 [submodule "glamkit/blogtools"]
 	path = glamkit/blogtools
 	url = git://github.com/glamkit/glamkit-blogtools.git
-[submodule "glamkit/schedule"]
-	path = glamkit/schedule
-	url = git://github.com/glamkit/django-schedule.git
+[submodule "glamkit/events"]
+	path = glamkit/events
+	url = git://github.com/glamkit/glamkit-events.git

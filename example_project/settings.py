@@ -104,7 +104,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'mediahash',
     'smartlinks',
-#     'events',
+    'events',
     'blogtools',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
