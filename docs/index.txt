@@ -12,8 +12,13 @@ Introduction
 Content Apps
 ============
 
-    * :doc:`Events <events/index>`
+    * :doc:`Assets <assets/index>`
+    * :doc:`Events <eventtools/index>`
     * :doc:`Blog tools <blogtools/index>`
+    * :doc:`Comment tools <commenttools/index>`
+    
+Glamkit Core
+============
 
 Utility Apps
 ============

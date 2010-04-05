@@ -10,7 +10,7 @@ TEMPLATES_PATH = os.path.join(PROJECT_PATH, 'templates/')
 sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/mediahash'))
 sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/smartlinks'))
 sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/blogtools'))
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/events'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/eventtools'))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -104,9 +104,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'mediahash',
     'smartlinks',
-    'events',
+    'eventtools',
     'blogtools',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     'blog',
+    'events',
+    'tagging',
 )
