@@ -10,12 +10,12 @@
 [submodule "glamkit/blogtools"]
 	path = glamkit/blogtools
 	url = git://github.com/glamkit/glamkit-blogtools.git
-[submodule "glamkit/eventtools"]
-	path = glamkit/eventtools
-	url = git://github.com/glamkit/glamkit-eventtools.git
 [submodule "glamkit/core"]
 	path = glamkit/core
 	url = git://github.com/glamkit/glamkit-core.git
 [submodule "glamkit/commenttools"]
 	path = glamkit/commenttools
 	url = git://github.com/glamkit/glamkit-commenttools.git
+[submodule "glamkit/eventtools"]
+	path = glamkit/eventtools
+	url = git@github.com:glamkit/glamkit-eventtools.git
