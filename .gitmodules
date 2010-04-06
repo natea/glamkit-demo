@@ -19,3 +19,6 @@
 [submodule "glamkit/external/glamkit-stopspam"]
 	path = glamkit/external/glamkit-stopspam
 	url = git://github.com/glamkit/glamkit-smartlinks.git
+[submodule "glamkit/external/glamkit-holdingpage"]
+	path = glamkit/external/glamkit-holdingpage
+	url = git://github.com/glamkit/glamkit-holdingpage.git
