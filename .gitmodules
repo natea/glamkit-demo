@@ -1,0 +1,21 @@
+[submodule "glamkit/external/glamkit-blogtools"]
+	path = glamkit/external/glamkit-blogtools
+	url = git://github.com/glamkit/glamkit-blogtools.git
+[submodule "glamkit/external/glamkit-commenttools"]
+	path = glamkit/external/glamkit-commenttools
+	url = git://github.com/glamkit/glamkit-commenttools.git
+[submodule "glamkit/external/glamkit-eventtools"]
+	path = glamkit/external/glamkit-eventtools
+	url = git://github.com/glamkit/glamkit-eventtools.git
+[submodule "glamkit/external/glamkit-mediahash"]
+	path = glamkit/external/glamkit-mediahash
+	url = git://github.com/glamkit/glamkit-mediahash.git
+[submodule "glamkit/core/glamkit-core"]
+	path = glamkit/core/glamkit-core
+	url = git://github.com/glamkit/glamkit-core.git
+[submodule "glamkit/external/glamkit-smartlinks"]
+	path = glamkit/external/glamkit-smartlinks
+	url = git://github.com/glamkit/glamkit-smartlinks.git
+[submodule "glamkit/external/glamkit-stopspam"]
+	path = glamkit/external/glamkit-stopspam
+	url = git://github.com/glamkit/glamkit-smartlinks.git
