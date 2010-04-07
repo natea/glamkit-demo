@@ -7,10 +7,10 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 TEMPLATES_PATH = os.path.join(PROJECT_PATH, 'templates/')
 
 # Add glamkit to the pythonpath
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/mediahash'))
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/smartlinks'))
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/blogtools'))
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/eventtools'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-mediahash'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-smartlinks'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-blogtools'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-eventtools'))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -109,6 +109,6 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     'blog',
-    'events',
+#     'events',
     'tagging',
 )
