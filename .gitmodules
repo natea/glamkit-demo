@@ -1,0 +1,21 @@
+[submodule "example_project/glamkit/contrib/blogtools"]
+	path = example_project/glamkit/contrib/blogtools
+	url = git://github.com/glamkit/glamkit-blogtools.git
+[submodule "example_project/glamkit/contrib/commenttools"]
+	path = example_project/glamkit/contrib/commenttools
+	url = git://github.com/glamkit/glamkit-commenttools.git
+[submodule "example_project/glamkit/contrib/eventtools"]
+	path = example_project/glamkit/contrib/eventtools
+	url = git://github.com/glamkit/glamkit-eventtools.git
+[submodule "example_project/glamkit/contrib/holdingpage"]
+	path = example_project/glamkit/contrib/holdingpage
+	url = git://github.com/glamkit/glamkit-holdingpage.git
+[submodule "example_project/glamkit/contrib/mediahash"]
+	path = example_project/glamkit/contrib/mediahash
+	url = git://github.com/glamkit/glamkit-mediahash.git
+[submodule "example_project/glamkit/contrib/smartlinks"]
+	path = example_project/glamkit/contrib/smartlinks
+	url = git://github.com/glamkit/glamkit-smartlinks.git
+[submodule "example_project/glamkit/contrib/stopspam"]
+	path = example_project/glamkit/contrib/stopspam
+	url = git://github.com/glamkit/glamkit-stopspam.git
