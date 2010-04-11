@@ -50,7 +50,7 @@
 			            {% if occ.id %}
 			            <th><a href="{% url admin:whats_on_occurrence_change occ.id %}">{{ occ.start|date:"jS" }}</a></th><td>{{ occ.start|date:"l" }}</td><td>{{ occ.start|date:"P" }}</td><td><img src="{% admin_media_prefix %}img/admin/icon-yes.gif" alt="True" /></td>
 			            {% else %}
-			            <th><a href="../persist/{{ occ.event.id }}/{{ occ.start.year }}/{{ occ.start.month }}/{{ occ.start.day }}/{{ occ.start.hour }}/{{ occ.start.minute }}/{{ occ.start.second }}/">{{ occ.start|date:"jS" }}</a></th><td>{{ occ.start|date:"l" }}</td><td>{{ occ.start|date:"P" }}</td><td><img src="{% admin_media_prefix %}img/admin/icon-no.gif" alt="False" /></td>
+			            <th><a href="../persist/{{ occ.generator.event.id }}/{{ occ.start.year }}/{{ occ.start.month }}/{{ occ.start.day }}/{{ occ.start.hour }}/{{ occ.start.minute }}/{{ occ.start.second }}/">{{ occ.start|date:"jS" }}</a></th><td>{{ occ.start|date:"l" }}</td><td>{{ occ.start|date:"P" }}</td><td><img src="{% admin_media_prefix %}img/admin/icon-no.gif" alt="False" /></td>
 			            {% endif %}
 			            </tr>
 			{% endfor %}
