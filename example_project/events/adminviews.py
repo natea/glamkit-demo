@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from events.models import Event, Rule, OccurrenceGenerator, Occurrence
+from events.models import Event
 from eventtools.periods import Month
 from django.template import RequestContext
 from django.http import HttpResponseRedirect
@@ -7,7 +7,7 @@ import datetime
 from django.core import urlresolvers
 
 def occurrences(request, id):
-    event = EventInfo.objects.get(pk=id)
+    event = Event.objects.get(pk=id)
     generators = event.generators.all()
     first = event.get_first_occurrence()
     last = event.get_last_day()

@@ -10,7 +10,7 @@ TEMPLATES_PATH = os.path.join(PROJECT_PATH, 'templates/')
 sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-mediahash'))
 sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-smartlinks'))
 sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-blogtools'))
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-eventtools'))
+sys.path.insert(0, os.path.join(PROJECT_PATH, '../../glamkit-eventtools'))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -90,7 +90,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'example_project.urls'
 
 TEMPLATE_DIRS = (
-    '/Volumes/Macintosh HD/Users/thomas/Code/glamkit/glamkit-core/example_project/templates',
+    '/Volumes/Macintosh HD/Users/thomas/Code/glamkit/glamkit-demo/example_project/templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -102,13 +102,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    'mediahash',
-    'smartlinks',
+#     'mediahash',
+#     'smartlinks',
     'eventtools',
-    'blogtools',
+#     'blogtools',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'blog',
-#     'events',
+#     'blog',
+    'events',
     'tagging',
 )
