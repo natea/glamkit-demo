@@ -29,7 +29,7 @@ def occurrences(request, id):
     return render_to_response('admin/events/list_occurrences.html', {"event": event, 'occurrences': occurrences, 'period': period, 'hasprev': hasprev, 'hasnext': hasnext, 'title': title}, context_instance=RequestContext(request))
 
 
-def persist_occurrence(request, event_id, info_id, year, month, day, hour, minute, second):
+def make_exceptional_occurrence(request, event_id, info_id, year, month, day, hour, minute, second):
     event = get_object_or_404(OccurrenceGenerator, id=event_id)
     occurrence = event.get_occurrence(datetime.datetime(int(year), int(month), int(day), int(hour), int(minute), int(second)))
     if occurrence is None:
