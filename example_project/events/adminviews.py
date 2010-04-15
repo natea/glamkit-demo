@@ -37,4 +37,3 @@ def persist_occurrence(request, event_id, info_id, year, month, day, hour, minut
     occurrence.save()
     change_url = urlresolvers.reverse('admin:whats_on_occurrence_change', args=(occurrence.id,))
     return HttpResponseRedirect(change_url)
-
