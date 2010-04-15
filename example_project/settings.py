@@ -6,11 +6,12 @@ import sys, os, logging
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 TEMPLATES_PATH = os.path.join(PROJECT_PATH, 'templates/')
 
-# Add glamkit to the pythonpath
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-mediahash'))
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-smartlinks'))
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../glamkit/external/glamkit-blogtools'))
-sys.path.insert(0, os.path.join(PROJECT_PATH, '../../glamkit-eventtools'))
+# Add glamkit to the front of the pythonpath
+GLAMKIT_BASE = os.path.join(PROJECT_PATH, '..', '..', )
+sys.path.insert(0, os.path.join(GLAMKIT_BASE, 'glamkit-mediahash'))
+sys.path.insert(0, os.path.join(GLAMKIT_BASE, 'glamkit-smartlinks'))
+sys.path.insert(0, os.path.join(GLAMKIT_BASE, 'glamkit-blogtools'))
+sys.path.insert(0, os.path.join(GLAMKIT_BASE, 'glamkit-eventtools'))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -111,4 +112,5 @@ INSTALLED_APPS = (
 #     'blog',
     'events',
     'tagging',
+    'django_extensions',
 )
