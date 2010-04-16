@@ -6,3 +6,4 @@ Markdown>=2.0.1
 django-tagging
 template_utils #included in this distribution
 vobject
+django_extensions
