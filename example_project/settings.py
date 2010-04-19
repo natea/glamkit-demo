@@ -109,7 +109,7 @@ INSTALLED_APPS = (
 #     'blogtools',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-#     'blog',
+    'blog',
     'events',
     'tagging',
     'django_extensions',
