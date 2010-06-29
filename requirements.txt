@@ -1,4 +1,4 @@
--e svn+http://code.djangoproject.com/svn/django/trunk#egg=django
+django>=1.1
 python-dateutil>=1.1 # used for schedule
 
 textile>=2.1.3

@@ -16,6 +16,7 @@ class Event(EventBase):
     
 class EventVariation(EventVariationBase):
     varies = "Event"
+    
     location = models.CharField(_("Alternative Location"), max_length = 255, blank=True, null=True)
     description = models.TextField(_("Alternative Description"), max_length=255, blank=True, null=True)
     
