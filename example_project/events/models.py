@@ -12,6 +12,9 @@ class Event(EventBase):
 
     varied_by = "EventVariation"
     
+    def get_absolute_url(self):
+        return "/event/%s/" % self.id
+
     def __unicode__(self):
         return self.title
     
