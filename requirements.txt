@@ -7,4 +7,4 @@ django-tagging
 template_utils #included in this distribution
 vobject
 django_extensions
--e git+git://github.com/glamkit/glamkit-eventtools.git#egg=eventtools
+-e git+git://github.com/natea/glamkit-eventtools.git#egg=eventtools
